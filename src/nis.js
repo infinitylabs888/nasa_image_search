@@ -1,14 +1,14 @@
-var sketch = require('sketch/dom')
-var async = require('sketch/async')
-var DataSupplier = require('sketch/data-supplier')
-var UI = require('sketch/ui')
-var Settings = require('sketch/settings')
+const sketch = require('sketch')
+const { toArray } = require('util')
+
+const API_KEY = ''
+const API_ENDPOINT = 'https://api.nasa.gov/planetary/apod'
+const apiOptions = ''
 
 
-// Install App on Sketch
+export function getImagesUrlsForItems(items, {searchIterm, photoId}){
+	let action
+}
 
-// Getting Input from User
-
-// Make API Call to Image API
-
-// Display Image on Selected Canvas
+const SETTING_KEY = 'unsplash.photo.id'
+const FOLDER = path.join(os.tmpdir(), 'com.sketchapp.unsplash-plugin')

@@ -1,0 +1,34 @@
+{
+  "name": "Nasa Image Search",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "suppliesData" : true,
+  "commands": [
+    {
+      "name": "View Space Image From Nasa",
+      "identifier": "imageDetails",
+      "script": "DataProvider.js",
+      "handler": {
+          "run": "onImageDetails"
+      }
+    },
+    {
+      "script" : "DataProvider.js",
+      "handlers" : {
+        "actions" : {
+          "Startup" : "onStartup",
+          "Shutdown" : "onShutdown",
+          "SupplyRandomPhoto" : "onSupplyRandomPhoto",
+          "SearchPhoto" : "onSearchPhoto"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "Nasa Image Search",
+    "items": [
+        "imageDetails"
+    ]
+  }
+}
